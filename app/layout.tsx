@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
@@ -40,7 +33,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <header>
+            {/* <header>
               <SignedOut>
                 <SignInButton />
                 <SignUpButton />
@@ -48,7 +41,7 @@ export default function RootLayout({
               <SignedIn>
                 <UserButton />
               </SignedIn>
-            </header>
+            </header> */}
             {children}
           </ThemeProvider>
         </body>

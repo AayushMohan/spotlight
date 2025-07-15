@@ -5,8 +5,11 @@ import { Slot } from "@radix-ui/react-slot";
 import { VariantProps, cva } from "class-variance-authority";
 import { PanelLeftIcon } from "lucide-react";
 
-import { useIsMobile } from "@/src/hooks/use-mobile";
-import { cn } from "@/src/lib/utils";
+// Update the import path below to the correct location of useIsMobile, for example:
+import { useIsMobile } from "@/hooks/use-mobile";
+// Or, if the file is actually named useIsMobile.ts, use:
+// import { useIsMobile } from "@/src/hooks/useIsMobile";
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
