@@ -4,7 +4,8 @@ import * as React from "react";
 import { Command as CommandPrimitive } from "cmdk";
 import { SearchIcon } from "lucide-react";
 
-import { cn } from "@/src/lib/utils";
+// Update the import path to the correct location of your utils file
+import { cn } from "@/lib/utils";
 import {
   Dialog,
   DialogContent,
